@@ -1,0 +1,113 @@
+<%-include('../partition/btechheader.ejs') %>
+
+ 
+
+<section class="section coming-soon" data-section="section3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-xs-12">
+        <div class="continer centerIt">
+          <div>
+            <h4>Every day <em>is an Adventure</em> When You are an Engineer👩‍💻</h4>
+
+
+
+          </div>
+          <br><br><br><br><br><br><br> 
+
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="right-content">
+          <div class="top-content">
+            <h6> B.TECH Registration Form 2022 </h6>
+          </div>
+
+
+
+          <form action="/course/btechinsert" id="contact" method="post">
+
+
+            <div class="row">
+              <div class="col-md-12">
+                <fieldset>
+                 
+                  <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <input name="email" type="email" class="form-control" id="mail" placeholder="Your Email" required="">
+                  
+                </fieldset>
+              </div>
+
+              <div class="col-md-12">
+                <fieldset>
+                  
+                  <input name="number" type="number" class="form-control" id="number" placeholder="Your Number"
+                    required="">
+
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                 
+                  <input name="address" type="text" class="form-control" id="address" placeholder="Your Address"
+                    required="">
+
+                </fieldset>
+              </div>
+
+
+              <div class="col-md-12">
+                <fieldset>
+        
+                  <select class="form-control" name="college" id="college">
+
+                    <option class="form-control" value="Select">college</option>
+                    <option class="form-control" value="ITM">ITM</option>
+                    <option class="form-control" value="IPS">IPS</option>
+                    <option class="form-control" value="IITM">IITM</option>
+                    <option class="form-control" value="MITS">MITS</option>
+
+                  </select>
+
+                </fieldset>
+              </div>
+
+              <br> <br>
+
+
+              <div class="col-md-12">
+                <fieldset>
+         
+                  <select class="form-control" name="course" id="course">
+
+                    <option class="form-control" value="Select">Course</option>
+                    <option class="form-control" value="B.Tech">B.Tech</option>
+                     
+
+                  </select>
+
+                </fieldset>
+              </div>
+
+
+
+              <div class="col-md-12">
+                <fieldset>
+                  <input type="hidden" name="user_id" value="<%= data1._id%>">
+                  <button type="submit" id="form-submit" class="btn-success">Submit</button>
+ 
+
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

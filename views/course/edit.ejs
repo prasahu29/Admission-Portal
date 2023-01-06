@@ -1,0 +1,69 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<center>
+<div class="container">
+  
+  <div class="row">
+    <div class="col-md-5">
+    
+<form action="/course/btechupdate/<%= data1._id %>" method="post">
+  <div class="mb-3">
+    <label>Name:</label>
+    <input type="text" name="name" class="form-control" 
+      value="<%= data1.name %>">
+  </div>
+
+  <div class="mb-3">
+    <label>Email:</label>
+    <input type="text" name="email" class="form-control" placeholder="Enter Email"
+      value="<%= data1.email %>">
+
+  </div>
+
+  <div class="mb-3">
+    <label>Mobile Number:</label>
+    <input type="text" name="number" class="form-control" placeholder="Enter Mobile Number"
+      value="<%= data1.number %>">
+  </div>
+
+  <div class="mb-3">
+    <label>Address:</label>
+    <br>
+    <textarea class="form-control" name="address"><%= data1.address %></textarea>
+  </div>
+
+   
+
+  <div class="mb-3">
+    <label>College</label>
+    <br>
+    <select name="college" class="form-control">
+      <option>Select college</option>
+      <option value="ITM" <%=data1.college=='ITM' ? 'selected' : '' %>>ITM</option>
+      <option value="IPS" <%=data1.college=='IPS' ? 'selected' : '' %>>IPS</option>
+      <option value="IITM" <%=data1.college=='IITM' ? 'selected' : '' %>>IITM</option>
+      <option value="MITS" <%=data1.college=='MITS' ? 'selected' : '' %>>MITS</option>
+     </select>
+  </div>
+
+  <div class="mb-3">
+    <label>Course</label>
+    <br>
+    <select name="course" class="form-control">
+      <option>Select</option>
+      <option value="B.Tech" <%=data1.course=='B.Tech' ? 'selected' : '' %>>B.Tech</option>
+      <option value="M.Tech" <%=data1.course=='M.Tech' ? 'selected' : '' %>>M.Tech</option>
+      <option value="MBA" <%=data1.course=='MBA' ? 'selected' : '' %>>MBA</option>
+      <option value="LAW" <%=data1.course=='LAW' ? 'selected' : '' %>>LAW</option>
+
+    </select>
+  </div>
+
+   
+  <button type="update" class="btn btn-info">Update</button>
+</form>
+
+</div>
+</div>
+
+</div> 
+</center>
